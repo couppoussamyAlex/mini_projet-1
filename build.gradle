@@ -11,6 +11,10 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
+test {
+	systemProperties 'property': 'value'
+}
+
 jacocoTestReport {
 	reports {
 		xml.enabled false
@@ -22,5 +26,5 @@ jacocoTestReport {
 findbugs {
 	toolVersion = "3.0.1"
 	effort = "min"
-	reportLevel = "high"
+	reportLevel ="high"
 }
